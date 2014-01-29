@@ -1,0 +1,2 @@
+    (use 'examples.leader-election)
+(join-group)
