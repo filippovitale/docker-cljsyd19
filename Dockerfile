@@ -12,4 +12,6 @@ ADD zookeeper-clj /cljsyd19
 RUN cd /cljsyd19 && echo "(exit)" | lein repl
 
 WORKDIR /cljsyd19
-CMD lein run
+#CMD { echo "(use 'examples.leader-election)"; echo "(join-group)"; } | lein repl
+#CMD  echo "(use 'examples.leader-election)" | lein repl
+CMD lein repl
