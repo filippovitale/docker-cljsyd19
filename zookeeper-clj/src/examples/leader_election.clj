@@ -4,7 +4,7 @@
 
 (def root-znode "/election")
 
-(def client (zk/connect "127.0.0.1:2181"))
+(def client (zk/connect "localhost:12181,localhost:22181,localhost:32181"))
 
 (when-not (zk/exists client root-znode)
   (zk/create client root-znode :persistent? true))
