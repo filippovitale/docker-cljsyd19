@@ -1,2 +1,8 @@
     (use 'examples.leader-election)
 (join-group)
+(use 'examples.leader-election)
+(join-group)
+(use 'examples.leader-election)
+(join-group)
+(use 'examples.leader-election)
+(join-group)
